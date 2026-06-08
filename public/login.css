@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Main layout ── */
+.fb-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex: 1;
+  padding: 60px 20px 40px;
+}
+
+/* ── Left side ── */
+.fb-left {
+  max-width: 430px;
+}
+
+.fb-logo {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #1877f2;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.fb-tagline {
+  font-size: 28px;
+  color: #1c1e21;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+/* ── Card / Right side ── */
+.fb-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 396px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ── Inputs ── */
+.fb-input {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  padding: 0 16px;
+  font-size: 17px;
+  color: #1c1e21;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.fb-input:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px rgba(24,119,242,0.2);
+}
+
+.fb-input::placeholder {
+  color: #8a8d91;
+}
+
+/* ── Login button ── */
+.fb-btn-login {
+  width: 100%;
+  height: 52px;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fb-btn-login:hover {
+  background-color: #166fe5;
+}
+
+.fb-btn-login:active {
+  background-color: #1464d8;
+}
+
+/* ── Forgot password ── */
+.fb-forgot {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.fb-forgot:hover {
+  text-decoration: underline;
+}
+
+/* ── Divider ── */
+.fb-divider {
+  border: none;
+  border-top: 1px solid #dadde1;
+  margin: 4px 0;
+}
+
+/* ── Create account button ── */
+.fb-btn-create {
+  width: fit-content;
+  align-self: center;
+  height: 48px;
+  padding: 0 24px;
+  background-color: #42b72a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fb-btn-create:hover {
+  background-color: #36a420;
+}
+
+.fb-btn-create:active {
+  background-color: #2d8f1b;
+}
+
+/* ── Page link ── */
+.fb-page-link {
+  text-align: center;
+  font-size: 14px;
+  color: #1c1e21;
+}
+
+.fb-page-link a {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.fb-page-link a:hover {
+  text-decoration: underline;
+}
+
+/* ── Footer ── */
+footer {
+  padding: 20px;
+  max-width: 980px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ── Language bar ── */
+.fb-lang-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  font-size: 13px;
+  margin-bottom: 12px;
+  padding: 0 8px;
+}
+
+.fb-lang-bar span {
+  color: #1c1e21;
+  font-weight: 500;
+}
+
+.fb-lang-bar a {
+  color: #606770;
+  text-decoration: none;
+}
+
+.fb-lang-bar a:hover {
+  text-decoration: underline;
+}
+
+/* ── Footer links ── */
+.fb-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 12px;
+  padding: 12px 8px;
+}
+
+.fb-footer-links a {
+  color: #606770;
+  text-decoration: none;
+}
+
+.fb-footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* ── Copyright ── */
+.fb-footer-copy {
+  font-size: 12px;
+  color: #8a8d91;
+  padding: 8px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .fb-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px 32px;
+    gap: 24px;
+  }
+
+  .fb-left {
+    text-align: center;
+  }
+
+  .fb-logo {
+    font-size: 42px;
+  }
+
+  .fb-tagline {
+    font-size: 20px;
+  }
+
+  .fb-card {
+    width: 100%;
+    max-width: 396px;
+  }
+}

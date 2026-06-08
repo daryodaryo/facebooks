@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Internet</title>
+
+    <link rel="stylesheet" href="afterlog.css">
+</head>
+<body>
+
+<div id="content">
+
+    <div id="main-frame-error">
+
+        <div id="main-content">
+
+            <div class="icon-offline"></div>
+
+            <div id="main-message">
+
+                <h1>Press space to play</h1>
+
+                <p>No internet</p>
+
+                <div id="suggestions-list">
+                    <p>Try:</p>
+                    <ul>
+                        <li>Checking the network cables, modem, and router</li>
+                        <li>Reconnecting to Wi-Fi</li>
+                        <li>
+                            <a href="#">
+                                Running Windows Network Diagnostics
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="error-code">
+                    ERR_INTERNET_DISCONNECTED
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="runner-container">
+            <canvas class="runner-canvas"></canvas>
+        </div>
+
+        <label class="slow-speed-option">
+            Start slower
+            <input type="checkbox">
+            <span class="slow-speed-toggle"></span>
+        </label>
+
+    </div>
+
+</div>
+
+</body>
+</html>
